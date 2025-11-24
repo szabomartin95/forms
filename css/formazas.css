@@ -1,0 +1,7 @@
+input [type=text], select {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 8px 0;
+    border: 2px solid black;
+    border-radius: 8px;
+}

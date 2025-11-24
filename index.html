@@ -1,18 +1,60 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prooktatás Alkalom 8 | Űrlapok / Forms</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <h1>Űrlapok</h1>
-    <h2>Belépés</h2>
+    <div class="title">
+        <h1>Űrlapok</h1>
+        <h2>Belépés</h2>
+    </div>
 
-    <form action="belepes.php" method="get">
+
+    <form action="" method="get">
         <label for="loginName">Felhasználónév:</label>
-        <input placeholder="Felhasználónév" type="text" id="loginName" name="userName">
-
+        <input type="text" id="loginName" name="userName" placeholder="Felhasználónév" required>
+        <label for="password">Jelszó:</label>
+        <input type="password" id="password">
+        <input type="submit">
     </form>
+
+    <form action="" method="get"><span>Szeretnél egy csokit?</span>
+        <label for="option-1">Igen</label>
+        <input type="radio" id="option-1" name="choice" value="Yes">
+        <label for="option-2">Nem</label>
+        <input type="radio" id="option-2" name="choice" value="No">
+        <input type="submit" value="Kérés küldése">
+    </form>
+
+    <form action="">
+        <label for="monday">Hétfő</label>
+        <input type="checkbox" name="day" id="monday" value="1">
+        <label for="tuesday">Kedd</label>
+        <input type="checkbox" name="day" id="tuesday" value="2">
+        <label for="wednesday">Szerda</label>
+        <input type="checkbox" name="day" id="wednesday" value="3">
+        <label for="thursday">Csütörtök</label>
+        <input type="checkbox" name="day" id="thursday" value="4">
+        <label for="friday">Péntek</label>
+        <input type="checkbox" name="day" id="friday" value="5">
+    </form>
+
+    <form action="" method="get">
+        <textarea name="message" id="message"></textarea>
+        <select name="drink" id="drinks">
+            <option value="water">Víz</option>
+            <option value="beer">Sör</option>
+            <option value="wine">Bor</option>
+            <option value="orangeJuice">Narancslé</option>
+        </select>
+        <input type="submit" value="Rendelés leadása">
+    </form>
+
 </body>
+
 </html>
